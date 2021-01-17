@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+* {
+  margin: 0px auto;
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  width: 100%;
+  height: 800px;
+}
+
+#component {
+  padding-top: 155px;
+}
+
+#card-container {
+  background-color: white;
+  max-width: 650px;
+  width: 50%;
+  min-width: 340px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 15px 20px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 40px;
+  box-sizing: border-box;
+  display: grid;
+}
+
+#titulo {
+  height: auto;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+  grid-row: 1;
+  width: 100%;
+}
+
+#titulo h1 {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: hsl(179, 62%, 43%);
+}
+
+#titulo h2 {
+  margin-bottom: 10px;
+  color: hsl(71, 73%, 54%);
+  font-size: 18px;
+  font-weight: 400;
+  padding-right: 100px;
+}
+
+#titulo p {
+  line-height: 25px;
+  padding-right: 100px;
+}
+
+#sub-info-wrapper {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#subscription {
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+  height: auto;
+  border-bottom-left-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+#info {
+  background-color: hsl(179, 48%, 55%);
+  width: 100%;
+  height: auto;
+  border-bottom-right-radius: 10px;
+  padding-bottom: 25px;
+}
+
+#subscription h1 {
+  color: white;
+  padding-left: 25px;
+  padding-bottom: 20px;
+}
+
+#price {
+  padding-left: 25px;
+  padding-bottom: 10px;
+}
+
+#price h2 {
+  color: white;
+  font-size: 30px;
+  float: left;
+}
+
+#subscription #price p {
+  color: hsl(204, 43%, 93%);
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 6px;
+  padding-bottom: 10px;
+}
+
+#subscription p {
+  color: white;
+  padding-left: 25px;
+  text-align: left;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+span {
+  display: block;
+  width: 80%;
+  height: 40px;
+  background-color: hsl(71, 73%, 54%);
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 15px;
+  color: white;
+  box-shadow: 0px 15px 20px 8px rgba(0, 0, 0, 0.1);
+}
+
+span:hover {
+  scale: 1.05;
+}
+
+#info h1 {
+  color: white;
+  padding-top: 40px;
+  padding-left: 40px;
+}
+
+#info p {
+  color: hsl(204, 43%, 93%);
+  padding-top: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: lighter;
+  line-height: 26px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+  #card-container {
+    width: 60%;
+  }
+
+  #subscription {
+    width: 100%;
+    height: 290px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom-left-radius: 0px;
+  }
+
+  #subscription h1 {
+    padding-left: 0px;
+  }
+
+  #sub-info-wrapper {
+    grid-template-columns: 100%;
+  }
+
+  #price {
+    padding-left: 0px;
+  }
+
+  #price h2 {
+    float: none;
+  }
+
+  #subscription #price p,
+  #subscription p {
+    padding-left: 0px;
+  }
+
+  #info {
+    height: 290px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+  }
+
+  #info h1 {
+    padding-left: 0px;
+  }
+}
